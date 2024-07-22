@@ -7,7 +7,8 @@ import { HttpService, HttpModule } from '@nestjs/axios';
 import { firstValueFrom } from 'rxjs';
 import { DatabaseModule } from './database/database.module';
 import { ConfigModule } from '@nestjs/config';
-import { environments } from 'environments';
+import { environments } from './environments';
+
 @Module({
   imports: [
     ConfigModule.forRoot({
